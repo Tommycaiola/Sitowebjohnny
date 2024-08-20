@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000ed;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/Progetto\ senza\ titolo.png'); /* foto logo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: white;
+    padding: 100px 0px;
+    text-align: center;
+    
+}
+
+header h1.welcome-title {
+    font-family: cursive;
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+header h2.pizza-title {
+    font-family: cursive;
+    font-size: 48px;
+    margin: 10px 0 0;
+    color: rgb(255, 255, 255);
+}
+
+.grande-grassetto {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #ff6600; /* Arancione */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Sezione Galleria Immagini */
+.images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images-gallery img {
+    width: calc(33.333% - 20px);
+    height: auto;
+    border-radius: 10px;
+}
+.menu-section p {
+    color: #000000;
+}
+/* Sezioni con sfondo grigio e testo arancione */
+.menu-section, .spiaggia-section, .locale-section, .location-section {
+    background-color: #ecf0f1; /* Grigio chiaro */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu-section h2, .spiaggia-section h2, .locale-section h2, .location-section h2 {
+    color: #ff6600; /* Arancione */
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.menu-section {
+    text-align: center;
+}
+
+.menu-section h2 {
+    color: #ff6600; /* Arancione */
+}
+
+.menu-section p {
+    margin-top: 0;
+    margin-bottom: 20px; /* Spazio tra descrizione e categorie */
+}
+
+.menu-category img {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: left
+}
+
+.category-title {
+    font-style: italic; /* Corsivo */
+    font-weight: bold; /* Grassetto */
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #d86213;
+    
+}
+.menu-section {
+    text-align: center; /* Centra il contenuto della sezione */
+    padding: 20px;
+}
+
+.menu-category {
+    display: flex; 
+    flex-direction: column;           /* Usa il flexbox per allineare le immagini */
+    justify-content: center;
+    align-items: center;  /* Centra le immagini orizzontalmente */
+    gap: 20px;                /* Spazio tra le immagini */
+}
+
+.menu-category img {
+    width: 500px;     /* Imposta una larghezza fissa per le immagini */
+    height: auto;     /* Mantiene le proporzioni originali */
+    border-radius: 10px; /* (Opzionale) Aggiungi angoli arrotondati alle immagini */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opzionale) Aggiungi ombra alle immagini */
+}
+
+.locale-section p {
+    color: #000000;
+}
+
+
+/* Sezione Dove Siamo */
+.location-section {
+    background-color: #ecf0f1; /* Grigio chiaro */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.location-section h2 {
+    color: #ff6600; /* Arancione */
+    font-style: italic;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.location-section p {
+    color: #000000ed; /* Colore del testo normale */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #ff6600; /* Arancione */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+.spiaggia-section img {
+    display: flex;
+    object-fit:none
+
+}
+
+.spiaggia-section p {
+    font-style: normal;
+    color:#000000
+}
+
+/* Cambio colore al link*/
+/* Stile generale per tutti i link */
+a {
+    color: #000000; /* Inherit the color of the surrounding text */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+/* Stile specifico per link esterni */
+a[href^="http"] {
+    color: black; /* Imposta il colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+/* Stile per il link quando ci si passa sopra con il mouse */
+a:hover {
+    color: rgb(0, 0, 0); /* Cambia colore quando il link è in hover */
+    text-decoration: underline; /* (Opzionale) Aggiunge la sottolineatura in hover */
+}
